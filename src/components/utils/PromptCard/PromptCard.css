@@ -11,7 +11,7 @@
     margin-top: -3.5px
 }
 
-.content {
+.content-prompt {
     color: #8e8e8e;
     margin-left: 0.3em;
 }
@@ -61,7 +61,7 @@
     margin-top: -1em;
 }
 
-button {
+.button {
     width: 40px;
     height: 35px;
     margin-left: -5px;
@@ -71,13 +71,13 @@ button {
     transition: 0.2s;
 }
 
-button svg path,
-button svg rect,
-button svg polygon {
+.button svg path,
+.button svg rect,
+.button svg polygon {
     fill: #ffffff;
 }
 
-button svg {
+.button svg {
     width: 10px;
     height: 10px;
 }

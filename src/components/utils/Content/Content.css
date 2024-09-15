@@ -1,0 +1,9 @@
+.content-body {
+    width: 70%;
+    margin: 15px;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
