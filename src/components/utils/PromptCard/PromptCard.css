@@ -1,9 +1,9 @@
 .card {
-    width: 250px;
-    height: 254px;
+    width: 50%;
     background: #121212;
     border-radius: 10px;
     border: 1px #212121 solid;
+    margin: 15px;
 }
 
 .card hr {

@@ -7,3 +7,9 @@
     margin: 15px;
     background-color: #05b437;
 }
+
+.code{
+    background-color: grey;
+    border-radius: 15px;
+    padding: 0 5px;
+}
