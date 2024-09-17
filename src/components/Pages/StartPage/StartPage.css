@@ -14,3 +14,13 @@
     padding: 0 5px;
     margin: 0 5px;
 }
+li{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+li img {
+    border-radius: 0;
+    margin: 15px;
+}
