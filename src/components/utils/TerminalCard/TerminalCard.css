@@ -1,7 +1,7 @@
 /* Fr2om Uiverse.io by myshy13 */
 .card2 {
     font-family: monospace;
-    scale: 1.2;
+    scale: 1;
     height: 15em;
     width: 20em;
     border-radius: 0.8em;
@@ -18,7 +18,6 @@
         background-color: #4e4e4e;
     }
     &:after {
-        content: "which vim";
         margin: 0.2em;
     }
 }

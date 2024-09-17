@@ -6,7 +6,7 @@ import {Content} from "./components/utils/Content/Content.jsx";
 import {useEffect, useState} from "react";
 
 function App() {
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(-1);
 
   return (
     <>

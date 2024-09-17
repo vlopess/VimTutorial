@@ -1,8 +1,8 @@
-export const Recoding = () => {
+export const ListaAlfaPage = () => {
     return (
         <>
             <div className={"title-text"}>
-                <span>Recoding</span>
+                <span>Lista Alfabética</span>
             </div>
         </>
     );

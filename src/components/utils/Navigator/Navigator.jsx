@@ -5,18 +5,19 @@ import "./Navigator.css"
 
 export const Navigator = ({index, setIndex}) => {
     const options = [
-        "Início", "História",
-        "Modos", "Navegação",
-        "Edição de texto", "Expressões Regulares",
+        "História", "Introdução",
+        "Configuração do Vim", "Modos",
+        "Comandos de movimento", "Comandos de edição",
+        "Pesquisa", "Expressões Regulares",
         "Dividir Telas", "NERDTree",
-        "Recoding"
+        "Recoding", "Lista Alfabética"
     ];
     const [start, setStart] = useState(true);
     const [end, setEnd] = useState(false);
     const navigate = useNavigate();
 
     useEffect(() => {
-        setStart(index !== 0);
+        setStart(index !== -1);
         setEnd(index !== (options.length - 1));
     }, [index, options.length]);
 
@@ -24,14 +25,16 @@ export const Navigator = ({index, setIndex}) => {
         let newIndex = index;
         --newIndex;
         setIndex(newIndex);
-        navigate(`/${options[newIndex]}`);
+        let route = options[newIndex] || "";
+        navigate(`/tutorialvim/${route}`);
     }
 
     const forward = () => {
         let newIndex = index;
         ++newIndex;
         setIndex(newIndex)
-        navigate(`/${options[newIndex]}`);
+        let route = options[newIndex] || "";
+        navigate(`/tutorialvim/${route}`);
     }
 
     return (

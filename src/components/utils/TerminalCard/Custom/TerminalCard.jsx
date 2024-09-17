@@ -1,9 +1,11 @@
 import  "../TerminalCard.css";
 
-export const TerminalCard = () => {
+export const TerminalCard = ({children}) => {
     return (
         <>
-            <div className="card2">user@admin:~$ </div>
+            <div className="card2">
+                {children}
+            </div>
         </>
     );
 }

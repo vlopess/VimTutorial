@@ -1,5 +1,5 @@
 
-export const CodeContainer = ({code}) => {
+export const CodeContainer = ({children}) => {
     return (
         <>
             <div style={{
@@ -9,7 +9,7 @@ export const CodeContainer = ({code}) => {
                 padding: "25px",
                 margin: "15px"
             }}>
-                <code>{code}</code>
+                <code>{children}</code>
             </div>
         </>
     );
