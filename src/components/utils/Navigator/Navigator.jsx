@@ -6,11 +6,11 @@ import "./Navigator.css"
 export const Navigator = ({index, setIndex}) => {
     const options = [
         "História", "Introdução",
-        "Configuração do Vim", "Modos",
-        "Comandos de movimento", "Comandos de edição",
-        "Pesquisa", "Expressões Regulares",
-        "Dividir Telas", "NERDTree",
-        "Recoding", "Lista Alfabética"
+        "Modos", "Comandos de movimento",
+        "Comandos de edição", "Pesquisa",
+        "Expressões Regulares", "Dividir Telas",
+        "NERDTree", "Recoding",
+        "Configuração do Vim", "Lista Alfabética"
     ];
     const [start, setStart] = useState(true);
     const [end, setEnd] = useState(false);

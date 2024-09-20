@@ -1,0 +1,51 @@
+/* From Uiverse.io by johnliter */
+/* Style for the tooltip container */
+.tooltip-container {
+    --background-light: #2B2B2B;
+    --bubble-size: 12px;
+    --glow-color: rgba(255, 255, 255, 0.5); /* Brighter glow color */
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 8px; /* Rounded edges */
+}
+
+/* Style for the bubble tooltip */
+.tooltip {
+    position: absolute;
+    top: -100%; /* Initially hidden above the container */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.6em 1em;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s;
+    border-radius: var(--bubble-size);
+    background: #2B2B2B;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Triangle arrow for the bubble tooltip */
+.tooltip::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    border-style: solid;
+    border-width: 8px 8px 0;
+    border-color: var(--background-light) transparent transparent;
+}
+
+
+.tooltip-container:hover .tooltip {
+    top: -120%; /* Adjusted position for the bubble tooltip */
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.text {
+    text-decoration: underline;
+}

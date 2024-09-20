@@ -1,5 +1,8 @@
 import {TerminalCard} from "../../utils/TerminalCard/Custom/TerminalCard.jsx";
 import {CodeContainer} from "../../utils/CodeContainer/CodeContainer.jsx";
+import {Key} from "../../utils/Key/Key.jsx";
+import {NewFileTerminal} from "../../utils/PromptCard/Custom/NewFileTerminal.jsx";
+import {Tooltip} from "../../utils/Tooltip/Tooltip.jsx";
 
 export const IntroductionPage = () => {
     return (
@@ -39,12 +42,38 @@ export const IntroductionPage = () => {
                 <div className={"title-text"}>
                     <span>Sintaxe de linha de comando</span>
                 </div>
-                <p>As maneiras mais comuns de iniciar uma sessão de vi são:</p>
+                <div style={{
+                    display: "flex",
+                }}>
+                    <div style={{display: "contents"}}>
+                        <Key text={"V"}/>
+                        <Key text={"I"}/>
+                        <Key text={"M"}/>
+                    </div>
+                    <p style={{paddingLeft: "15px"}}>é o comando que invoca o editor vim para um existente arquivo ou
+                        novo. A sintaxe para o comando vim é:</p>
+                </div>
                 <CodeContainer>
-                    <p>vi <i>arquivo</i></p>
-                    <p>vi</p>
+                    <p>vi <i>[filename]</i></p>
                 </CodeContainer>
-                <p>A primeira opção você abre o <i>arquivo</i> para editar, no entanto, se não for passado nenhum arquivo, o <b>vi</b> abre com o buffer vazio, segundo cenário.</p>
+                <p>O <i>filename</i> é opcional, caso ele
+                    seja omitido o <b>vim</b> abre com o buffer (uma área
+                    temporariamente reservado na memória) vazio. O <i>filename</i> deve ser único no diretório. tal comando serve para abrir para edição um arquivo ou criar um novo. No exemplo abaixo é feito o passo a passo de como criar um novo arquivo no diretório atual:</p>
+                <div style={{display: "flex", alignItems: "center", justifyContent: "space-between"}}>
+                    <TerminalCard>
+                        <b>user@pc-admin</b>:<b>~</b>$ vim teste.txt<br/>
+                    </TerminalCard>
+                    +
+                    <Key text={"Enter"}/>
+                    =
+                    <NewFileTerminal/>
+                </div>
+                <p>Você pode usar o vim para editar qualquer arquivo de texto, para isso, basta passar o caminho do arquivo completo, ou se estiver o seu diretório atual, é só passar o caminho relativo:</p>
+                <CodeContainer>
+                    <p>vi teste.txt <span className={'comment'}>// se o arquivo estiver no diretório em que você se encontra</span> </p>
+                    <p>vi /home/user/teste.txt <span className={'comment'}>// caminho completo para editar um arquivo em um outro diretório</span></p>
+                </CodeContainer>
+                <p>É importante ressaltar que o vim copia a arquivo a ser trabalho para o <Tooltip text={"Teste"}>buffer</Tooltip></p>
             </div>
         </>
     );

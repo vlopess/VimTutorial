@@ -14,13 +14,19 @@
     padding: 0 5px;
     margin: 0 5px;
 }
-li{
+.div-reference div{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin: 15px;
 }
 
-li img {
+.div-reference img {
     border-radius: 0;
     margin: 15px;
+}
+
+.div-reference span{
+    width: 75%;
+    text-align: left;
 }

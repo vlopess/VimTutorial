@@ -6,6 +6,10 @@
     margin: 15px;
 }
 
+.medium {
+    width: 40%;
+}
+
 .card hr {
     color: #313131;
     margin-top: -3.5px
@@ -13,7 +17,6 @@
 
 .content-prompt {
     color: #8e8e8e;
-    margin-left: 0.3em;
 }
 
 .c1 {

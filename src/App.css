@@ -76,5 +76,26 @@ html, body {
   color: white;
 }
 
+.c1 {
+  color: rgb(55, 91, 158)
+}
+
+.c2 {
+  color: rgb(55, 158, 150)
+}
+
+.c3 {
+  color: rgb(158, 151, 55)
+}
+
+.c4 {
+  color: rgb(88, 158, 55)
+}
+
+.comment {
+  opacity: 50%
+}
+
+
 
 
