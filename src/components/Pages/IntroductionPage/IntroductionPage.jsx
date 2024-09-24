@@ -56,9 +56,13 @@ export const IntroductionPage = () => {
                 <CodeContainer>
                     <p>vi <i>[filename]</i></p>
                 </CodeContainer>
-                <p>O <i>filename</i> é opcional, caso ele
-                    seja omitido o <b>vim</b> abre com o buffer (uma área
-                    temporariamente reservado na memória) vazio. O <i>filename</i> deve ser único no diretório. tal comando serve para abrir para edição um arquivo ou criar um novo. No exemplo abaixo é feito o passo a passo de como criar um novo arquivo no diretório atual:</p>
+                <div style={{display: "flex", flexDirection: "row"}}>
+                    <p>
+                        O <i>filename</i> é opcional, caso ele seja omitido o <b>vim</b> abre com o
+                        <Tooltip text={"Área temporariamente reservado na memória"}>buffer</Tooltip>
+                        vazio. O <i>filename</i> deve ser único no diretório. tal comando serve para abrir para edição um arquivo ou criar um novo. No exemplo abaixo é feito o passo a passo de como criar um novo arquivo no diretório atual:
+                    </p>
+                </div>
                 <div style={{display: "flex", alignItems: "center", justifyContent: "space-between"}}>
                     <TerminalCard>
                         <b>user@pc-admin</b>:<b>~</b>$ vim teste.txt<br/>
@@ -73,7 +77,9 @@ export const IntroductionPage = () => {
                     <p>vi teste.txt <span className={'comment'}>// se o arquivo estiver no diretório em que você se encontra</span> </p>
                     <p>vi /home/user/teste.txt <span className={'comment'}>// caminho completo para editar um arquivo em um outro diretório</span></p>
                 </CodeContainer>
-                <p>É importante ressaltar que o vim copia a arquivo a ser trabalho para o <Tooltip text={"Teste"}>buffer</Tooltip></p>
+                <div style={{display: "flex", alignItems: "center"}}>
+                    <p>É importante ressaltar que o vim copia a arquivo a ser trabalho para o buffer</p>
+                </div>
             </div>
         </>
     );

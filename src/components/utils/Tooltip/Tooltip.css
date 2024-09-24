@@ -8,14 +8,14 @@
     cursor: pointer;
     transition: all 0.2s;
     border-radius: 8px; /* Rounded edges */
+    width: 10px;
 }
 
 /* Style for the bubble tooltip */
 .tooltip {
     position: absolute;
-    top: -100%; /* Initially hidden above the container */
+    top: -250%; /* Initially hidden above the container */
     left: 50%;
-    transform: translateX(-50%);
     padding: 0.6em 1em;
     opacity: 0;
     visibility: hidden;
@@ -23,7 +23,8 @@
     transition: all 0.3s;
     border-radius: var(--bubble-size);
     background: #2B2B2B;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    width: max-content;
 }
 
 /* Triangle arrow for the bubble tooltip */
@@ -31,8 +32,6 @@
     content: "";
     position: absolute;
     top: 100%;
-    left: 50%;
-    transform: translate(-50%);
     border-style: solid;
     border-width: 8px 8px 0;
     border-color: var(--background-light) transparent transparent;
@@ -40,7 +39,6 @@
 
 
 .tooltip-container:hover .tooltip {
-    top: -120%; /* Adjusted position for the bubble tooltip */
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
