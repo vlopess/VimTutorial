@@ -16,7 +16,8 @@ export const HistoryPage = () => {
                     flexDirection: "column",
                 }}>
                     <p>
-                        Vim é um acrônimo para <i>Vi Improved (Vi Melhorado)</i>, um editor de texto multiplataforma gratuito e de código aberto, é uma versão aprimorada do editor de
+                        Vim é um acrônimo para <i>Vi Improved (Vi Melhorado)</i>, um editor de texto de terminal
+                        multiplataforma gratuito e de código aberto, é uma versão aprimorada do editor de
                         texto Vi. Foi lançado pela primeira vez
                         por
                         Bram Moolenaar em 1991 para variantes UNIX.
@@ -30,6 +31,11 @@ export const HistoryPage = () => {
 
                         Vim é um editor modal, o que significa que ele possui diferentes modos para
                         diferentes tipos de operações, como inserção, navegação e comando.
+                    </p>
+                    <h3 style={{color: "#05b437", margin: "0"}}>Sobre o Criador</h3>
+                    <p>
+                        Uma característica única de Bram Moolenaar é que ele sempre usou o Vim como uma ferramenta para promover
+                        caridade. Ele incentivava doações para a caridade holandesa <a href="https://iccf.nl/news.html" target={"_blank"}>ICCF Holland</a>, que apoia crianças órfãs em Uganda.
                     </p>
                 </div>
                 <div style={{
@@ -47,28 +53,6 @@ export const HistoryPage = () => {
                 </div>
             </div>
             <p>
-                O Vim é um editor de texto altamente configurável criado para permitir texto eficiente edição.
-                Vim é um acrônimo para Vi IMproved. É um editor de texto multiplataforma gratuito e de código
-                aberto. Foi lançado pela primeira vez por Bram Moolenaar em 1991 para variantes UNIX.
-                O Vim é baseado no editor Vi original, criado por Bill Joy em 1976. Nos anos 90, começou a ficar
-                claro que o Vi carecia de alguns recursos quando comparado com o editor Emacs. Então Bram
-                implementou muitos recursos ausentes e o lançou sob o nome de Vim.
-                Vim, que significa "Vi Improved", é uma versão aprimorada do editor de texto Vi, que foi criado por
-                Bill Joy em 1976. Vim é um editor modal, o que significa que ele possui diferentes modos para
-                diferentes tipos de operações, como inserção, navegação e comando. Isso permite que você edite e
-                manipule texto de maneira muito eficiente uma vez que você se acostume com seus conceitos e
-                comandos.
-                O Vim é um editor de texto altamente configurável criado para permitir texto eficiente edição.
-                Vim é um acrônimo para Vi IMproved. É um editor de texto multiplataforma gratuito e de código
-                aberto. Foi lançado pela primeira vez por Bram Moolenaar em 1991 para variantes UNIX.
-                O Vim é baseado no editor Vi original, criado por Bill Joy em 1976. Nos anos 90, começou a ficar
-                claro que o Vi carecia de alguns recursos quando comparado com o editor Emacs. Então Bram
-                implementou muitos recursos ausentes e o lançou sob o nome de Vim.
-                Vim, que significa "Vi Improved", é uma versão aprimorada do editor de texto Vi, que foi criado por
-                Bill Joy em 1976. Vim é um editor modal, o que significa que ele possui diferentes modos para
-                diferentes tipos de operações, como inserção, navegação e comando. Isso permite que você edite e
-                manipule texto de maneira muito eficiente uma vez que você se acostume com seus conceitos e
-                comandos.
             </p>
         </>
     );
