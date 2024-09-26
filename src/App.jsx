@@ -6,7 +6,14 @@ import {Content} from "./components/utils/Content/Content.jsx";
 import {useEffect, useState} from "react";
 
 function App() {
-  const [index, setIndex] = useState(-1);
+  const [index, setIndex] = useState(() => {
+    const savedIndex = localStorage.getItem('index');
+    return savedIndex !== null ? JSON.parse(savedIndex) : -1;
+  });
+
+  useEffect(() => {
+   localStorage.setItem('index', JSON.stringify(index));
+  }, [index]);
 
   return (
     <>

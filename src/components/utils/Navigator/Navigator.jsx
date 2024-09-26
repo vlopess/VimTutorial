@@ -40,7 +40,7 @@ export const Navigator = ({index, setIndex}) => {
     return (
         <>
             <div className={"buttons"}>
-                {start && (<NavigatorButton Text={options[(index - 1)]} isBack={true} onClick={back}/>)}
+                {start && (<NavigatorButton Text={options[(index - 1)] ?? "Início"} isBack={true} onClick={back}/>)}
                 {end && (<NavigatorButton Text={options[(index + 1)]} onClick={forward}/>)}
             </div>
         </>

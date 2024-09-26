@@ -2,7 +2,7 @@ import {TerminalCard} from "../../utils/TerminalCard/Custom/TerminalCard.jsx";
 import {CodeContainer} from "../../utils/CodeContainer/CodeContainer.jsx";
 import {Key} from "../../utils/Key/Key.jsx";
 import {NewFileTerminal} from "../../utils/PromptCard/Custom/NewFileTerminal.jsx";
-import {Tooltip} from "../../utils/Tooltip/Tooltip.jsx";
+import "./IntroductionPage.css";
 
 export const IntroductionPage = () => {
     return (
@@ -23,8 +23,8 @@ export const IntroductionPage = () => {
                     vim</code> para instalar. Caso deseje baixar no Windows ou escolher entre as opções de instalação,
                     acesse a <a
                     href="https://www.vim.org/download.php" target={"_blank"}>página oficial de download do Vim</a>.
-                    Verifique se o Vim
-                    está instalado corretamente na sua máquina usando o comando <code className={"code"}>which
+                    Para verificar se o Vim
+                    está instalado corretamente na sua máquina, utilize o comando <code className={"code"}>which
                     vim</code>, tendo como saída esperada <code className={"code"}>/usr/bin/vim</code>, como é mostrado
                     abaixo:
                 </p>
@@ -39,9 +39,11 @@ export const IntroductionPage = () => {
                         <b>user@pc-admin</b>:<b>~</b>$
                     </TerminalCard>
                 </div>
+                <p>Feito isso, já é possível começar a usar o Vim.</p>
                 <div className={"title-text"}>
                     <span>Sintaxe de linha de comando</span>
                 </div>
+                <h3 style={{color: "#05b437", margin: "0"}}>Abrindo um arquivo</h3>
                 <div style={{
                     display: "flex",
                 }}>
@@ -58,9 +60,10 @@ export const IntroductionPage = () => {
                 </CodeContainer>
                 <div style={{display: "flex", flexDirection: "row"}}>
                     <p>
-                        O <i>filename</i> é opcional, caso ele seja omitido o <b>vim</b> abre com o
-                        <Tooltip text={"Área temporariamente reservado na memória"}>buffer</Tooltip>
-                        vazio. O <i>filename</i> deve ser único no diretório. tal comando serve para abrir para edição um arquivo ou criar um novo. No exemplo abaixo é feito o passo a passo de como criar um novo arquivo no diretório atual:
+                        O <i>filename</i> é opcional, caso ele seja omitido o <b>vim</b> abre com o o buffer (Área
+                        temporariamente reservado na memória) vazio. O <i>filename</i> deve ser único no diretório. Tal
+                        comando serve para abrir para edição um arquivo ou criar um novo. No exemplo abaixo é feito o
+                        passo a passo de como criar um novo arquivo no diretório atual:
                     </p>
                 </div>
                 <div style={{display: "flex", alignItems: "center", justifyContent: "space-between"}}>
@@ -72,13 +75,53 @@ export const IntroductionPage = () => {
                     =
                     <NewFileTerminal/>
                 </div>
-                <p>Você pode usar o vim para editar qualquer arquivo de texto, para isso, basta passar o caminho do arquivo completo, ou se estiver o seu diretório atual, é só passar o caminho relativo:</p>
+                <p>
+                    No resultado é visível, na coluna esquerda da tela, há uns tils (~) que indicam
+                    que não há texto em o arquivo. Já na parte inferior, tem a chamada <i>linha de status</i>
+                    que tem o nome e o status do arquivo.
+                </p>
+                <p>Você pode usar o vim para editar qualquer arquivo de texto, para isso, basta passar o caminho do
+                    arquivo completo, ou se estiver o seu diretório atual, é só passar o caminho relativo:</p>
                 <CodeContainer>
-                    <p>vi teste.txt <span className={'comment'}>// se o arquivo estiver no diretório em que você se encontra</span> </p>
-                    <p>vi /home/user/teste.txt <span className={'comment'}>// caminho completo para editar um arquivo em um outro diretório</span></p>
+                    <p>vi teste.txt <span className={'comment'}>// se o arquivo estiver no diretório em que você se encontra</span>
+                    </p>
+                    <p>vi /home/user/teste.txt <span className={'comment'}>// caminho completo para editar um arquivo em um outro diretório</span>
+                    </p>
                 </CodeContainer>
+                <h3 style={{color: "#05b437", margin: "0"}}>Salvando e fechando um arquivo</h3>
                 <div style={{display: "flex", alignItems: "center"}}>
-                    <p>É importante ressaltar que o vim copia a arquivo a ser trabalho para o buffer</p>
+                    <p>
+                        É importante ressaltar que o Vim copia a arquivo a ser trabalhado para o
+                        buffer e todas as edições feitas no arquivo não afetaram o arquivo original
+                        até que seja feita o salvamento.
+                    </p>
+                </div>
+                <span> Para todos os comandos abaixo, verifique se está no <i>modo de comando</i> pressionando a tecla <Key
+                    text={"Esc"}/> e depois entre com o comando.</span>
+                <p>
+                    Caso deseje sair do arquivo em que esteja trabalhando e salvar o conteúdo, o
+                    comando para sair e salvar é<code className={"code"}>ZZ</code>. Se quiser somente salvar use
+                    o <code className={"code"}>:w</code> (write) e o <code className={"code"}>:q</code> (quit) para
+                    sair se houver mudanças salvas, porém, caso tenha escrito algo e não tenha salvo
+                    com o <code className={"code"}>:w</code>, ocorrerar um erro ao sair <i style={{color: "red"}}>(E37:
+                    Alterações não foram gravadas (adicione ! para forçar))</i>,
+                    sendo ele solucionado com <code className={"code"}>:q!</code>, que força a saída descartando as
+                    alterações. Mas se quiser só desfazer tudo que foi feito desde a última escrita no arquivo original,
+                    basta forçar com o comando <code className={"code"}>:e!</code>. Você pode mesclar os comandos acima<code className={"code"}>:wq</code>, para salvar e sair, o
+                    equivalente a<code className={"code"}>ZZ</code>.
+                </p>
+                <div style={{display: "flex", alignItems: "center", justifyContent: "space-between"}}>
+                    <NewFileTerminal/>
+                    +
+                    <Key text={"Esc"}/>
+                    <Key text={"Shift"}/>
+                    <Key text={"Z"}/>
+                    <Key text={"Z"}/>
+                    =
+                    <TerminalCard>
+                        <b>user@pc-admin</b>:<b>~</b>$ ls<br/>
+                        teste.txt
+                    </TerminalCard>
                 </div>
             </div>
         </>

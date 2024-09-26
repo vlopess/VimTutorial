@@ -13,7 +13,7 @@ export const SideBar = ({index, setIndex}) => {
             <aside className="container">
                 <div className="sidebar">
                     <object onClick={() => navigator('/')} width={75} height={150} type="image/svg+xml" data={vimLogo}></object>
-                    <Link to={"/"} style={{textDecoration: "none"}}>
+                    <Link onClick={() => update(-1)} to={"/"} style={{textDecoration: "none"}}>
                         <p>Vim Tutorial</p>
                     </Link>
                 </div>
