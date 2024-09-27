@@ -123,6 +123,37 @@ export const IntroductionPage = () => {
                         teste.txt
                     </TerminalCard>
                 </div>
+                <p>Há outras maneiras de salvar e sair de um arquivo no Vim. Segue abaixo todos os possíveis comandos:</p>
+                <table>
+                    <tr>
+                        <th>Comando</th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td><b>ZZ</b></td>
+                        <td>Fecha o <b>vi</b>, grava o arquivo somente se as alterações foram feitas.</td>
+                    </tr>
+                    <tr>
+                        <td><b>:x</b></td>
+                        <td>O mesmo que ZZ</td>
+                    </tr>
+                    <tr>
+                        <td><b>:w <i>arquivo</i></b></td>
+                        <td>Salva a cópia para <i>arquivo</i></td>
+                    </tr>
+                    <tr>
+                        <td><b>:w</b></td>
+                        <td>Grava o arquivo</td>
+                    </tr>
+                    <tr>
+                        <td><b>:q</b></td>
+                        <td>Fecha o arquivo</td>
+                    </tr>
+                    <tr>
+                        <td><b>:q!</b></td>
+                        <td>Fecha o arquivo, descartando as alterações</td>
+                    </tr>
+                </table>
             </div>
         </>
     );

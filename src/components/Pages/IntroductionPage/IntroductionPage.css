@@ -1,3 +1,22 @@
 h3 {
     padding: 25px 0;
 }
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #313131;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #313131;
+}
+td, th {
+    text-align: center;
+}
