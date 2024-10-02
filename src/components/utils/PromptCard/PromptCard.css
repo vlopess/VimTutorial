@@ -10,6 +10,10 @@
     width: 40%;
 }
 
+.small {
+    width: 90%;
+}
+
 .card hr {
     color: #313131;
     margin-top: -3.5px
