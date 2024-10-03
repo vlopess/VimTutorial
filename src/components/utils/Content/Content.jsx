@@ -12,6 +12,7 @@ import "./Content.css";
 import {IntroductionPage} from "../../Pages/IntroductionPage/IntroductionPage.jsx";
 import {ConfiguracaoVimPage} from "../../Pages/ConfiguracaoVimPage/ConfiguracaoVimPage.jsx";
 import {ListaAlfaPage} from "../../Pages/ListaAlfaPage/ListaAlfaPage.jsx";
+import {SearchPage} from "../../Pages/SearchPage/SearchPage.jsx";
 
 export const Content = () =>{
     return (
@@ -29,6 +30,7 @@ export const Content = () =>{
                     <Route path="/tutorialvim/Modos" element={<ModosPage/>}/>
                     <Route path="/tutorialvim/Comandos de movimento" element={<NavegacaoPage/>}/>
                     <Route path="/tutorialvim/Comandos de edição" element={<EdicaoPage/>}/>
+                    <Route path="/tutorialvim/Pesquisa" element={<SearchPage/>}/>
                     <Route path="/tutorialvim/Expressões Regulares" element={<RegexPage/>}/>
                     <Route path="/tutorialvim/Dividir Telas" element={<WindowsPage/>}/>
                     <Route path="/tutorialvim/NERDTree" element={<NERDTreePage/>}/>

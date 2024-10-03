@@ -1,8 +1,8 @@
-export const WindowsPage = () => {
+export const SearchPage = () => {
     return (
         <>
             <div className={"title-text"}>
-                <span>Dividir Telas</span>
+                <span>Pesquisa</span>
             </div>
         </>
     );

@@ -60,7 +60,9 @@ export const HistoryPage = () => {
                 <div>
                     <h3 style={{color: "#05b437", margin: "0"}}>+ Sobre o Criador</h3>
                     <p>
-                        O engenheiro de software holandês <b>Bram Moolenaar</b> foi quem criou o Vim, além disso era
+                        O engenheiro de software holandês <a href="https://en.wikipedia.org/wiki/Bram_Moolenaar"
+                                                             target={"_blank"}><b>Bram Moolenaar</b></a> foi quem criou
+                        o Vim, além disso era
                         defensor do software livre
                         permitindo que a comunidade contribuissem para o desenvolvimento do vim. Ademais, ele usou o Vim
                         como uma ferramenta para promover
