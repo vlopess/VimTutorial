@@ -6,7 +6,7 @@ export const SideBarItem = ({text, isActive, onClick}) => {
     return (
         <>
             <div className={`item ${isActive ? 'active' : ''}`}>
-                <Link to={`/tutorialvim/${text}`} onClick={onClick} writingsuggestions="auto">{text}</Link>
+                <Link to={`/VimTutorial/${text}`} onClick={onClick} writingsuggestions="auto">{text}</Link>
             </div>
         </>
     );

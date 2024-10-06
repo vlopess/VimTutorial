@@ -26,7 +26,7 @@ export const Navigator = ({index, setIndex}) => {
         --newIndex;
         setIndex(newIndex);
         let route = options[newIndex] || "";
-        navigate(`/tutorialvim/${route}`);
+        navigate(`/VimTutorial/${route}`);
     }
 
     const forward = () => {
@@ -35,7 +35,7 @@ export const Navigator = ({index, setIndex}) => {
         let route = options[newIndex] || "";
         if(!route) newIndex = -1;
         setIndex(newIndex)
-        navigate(`/tutorialvim/${route}`);
+        navigate(`/VimTutorial/${route}`);
     }
 
     return (
