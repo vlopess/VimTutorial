@@ -1,0 +1,134 @@
+{
+  "data": [
+    {
+      "Keystrokes": "A",
+      "Description": "Acrescenta texto depois do cursor",
+      "Result": ""
+    },
+    {
+      "Keystrokes": "Shift A",
+      "Description": "Acrescenta texto ao fim da linha",
+      "Result": ""
+    },
+    {
+      "Keystrokes": "B",
+      "Description": "Volta para o início da palavra na linha atual",
+      "Result": ""
+    },
+    {
+      "Keystrokes": "Shift B",
+      "Description": "Volta uma palavra, ignorando a pontuação",
+      "Result": ""
+    },
+    {
+      "Keystrokes": "C",
+      "Description": "Altera o operador",
+      "Result": ""
+    },
+    {
+      "Keystrokes": "Shift C",
+      "Description": "Altera para o fim da linha atual",
+      "Result": ""
+    },
+    {
+      "Keystrokes": "D",
+      "Description": "Exclui o operador",
+      "Result": ""
+    },
+    {
+      "Keystrokes": "Shift D",
+      "Description": "Exclui até o fim da linha atual",
+      "Result": ""
+    },
+    {
+      "Keystrokes": "E",
+      "Description": "Move para o fim da palavra",
+      "Result": ""
+    },
+    {
+      "Keystrokes": "Shift E",
+      "Description": "Move para o fim da palavra, ignorando a pontuação",
+      "Result": ""
+    },
+    {
+      "Keystrokes": "F",
+      "Description": "Localiza próximo caractere digitado na frente na linha atual",
+      "Result": ""
+    },
+    {
+      "Keystrokes": "Shift F",
+      "Description": "Localiza próximo caractere digitado atrás na linha atual",
+      "Result": ""
+    },
+    {
+      "Keystrokes": "Shift G",
+      "Description": "Vai para a linha especificada ou fim do arquivo",
+      "Result": ""
+    },
+    {
+      "Keystrokes": "a",
+      "Description": "",
+      "Result": ""
+    },
+    {
+      "Keystrokes": "a",
+      "Description": "",
+      "Result": ""
+    },
+    {
+      "Keystrokes": "a",
+      "Description": "",
+      "Result": ""
+    },
+    {
+      "Keystrokes": "a",
+      "Description": "",
+      "Result": ""
+    },
+    {
+      "Keystrokes": "a",
+      "Description": "",
+      "Result": ""
+    },
+    {
+      "Keystrokes": "a",
+      "Description": "",
+      "Result": ""
+    },
+    {
+      "Keystrokes": "a",
+      "Description": "",
+      "Result": ""
+    },
+    {
+      "Keystrokes": "a",
+      "Description": "",
+      "Result": ""
+    },
+    {
+      "Keystrokes": "a",
+      "Description": "",
+      "Result": ""
+    },
+    {
+      "Keystrokes": "a",
+      "Description": "",
+      "Result": ""
+    },
+    {
+      "Keystrokes": "a",
+      "Description": "",
+      "Result": ""
+    },
+    {
+      "Keystrokes": "a",
+      "Description": "",
+      "Result": ""
+    },
+    {
+      "Keystrokes": "a",
+      "Description": "",
+      "Result": ""
+    }
+  ]
+}
