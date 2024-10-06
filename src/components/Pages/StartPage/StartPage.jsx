@@ -2,6 +2,7 @@ import "./StartPage.css";
 import {motion} from "framer-motion";
 import {VimTerminal} from "../../utils/PromptCard/Custom/VimTerminal.jsx";
 import {Key} from "../../utils/Key/Key.jsx";
+import {useEffect} from "react";
 
 const initial = {
   opacity: 0,
@@ -22,7 +23,9 @@ export const StartPage = () => {
             <div className={"title-text"}>
                 <span>Início</span>
             </div>
-            <div style={{
+            <div
+                className={"scrollable-container"}
+                style={{
                 display: "flex",
                 justifyContent: "space-between",
                 margin: "15px",

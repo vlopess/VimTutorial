@@ -6,12 +6,20 @@
     margin: 15px;
 }
 
+.small {
+    width: 30%;
+}
+
 .medium {
     width: 40%;
 }
 
-.small {
+.large {
     width: 90%;
+}
+
+.Xlarge{
+    width: 95%;
 }
 
 .card hr {

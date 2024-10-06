@@ -1,6 +1,15 @@
 import "./HistoryPage.css";
+import {useEffect} from "react";
 
 export const HistoryPage = () => {
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }, []);
+
     return (
         <>
             <div className={"title-text"}>

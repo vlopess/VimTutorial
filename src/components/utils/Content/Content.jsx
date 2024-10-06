@@ -4,7 +4,6 @@ import {HistoryPage} from "../../Pages/HistoryPage/HistoryPage.jsx";
 import {ModosPage} from "../../Pages/ModosPage/ModosPage.jsx";
 import {NavegacaoPage} from "../../Pages/NavegacaoPage/NavegacaoPage.jsx";
 import {EdicaoPage} from "../../Pages/EdicaoPage/EdicaoPage.jsx";
-import {RegexPage} from "../../Pages/RegexPage/RegexPage.jsx";
 import {WindowsPage} from "../../Pages/WindowsPage/WindowsPage.jsx";
 import {NERDTreePage} from "../../Pages/NERDTreePage/NERDTreePage.jsx";
 import {RecodingPage} from "../../Pages/RecodingPage/RecodingPage.jsx";
@@ -13,6 +12,8 @@ import {IntroductionPage} from "../../Pages/IntroductionPage/IntroductionPage.js
 import {ConfiguracaoVimPage} from "../../Pages/ConfiguracaoVimPage/ConfiguracaoVimPage.jsx";
 import {ListaAlfaPage} from "../../Pages/ListaAlfaPage/ListaAlfaPage.jsx";
 import {SearchPage} from "../../Pages/SearchPage/SearchPage.jsx";
+import {MarkPage} from "../../Pages/MarkPage/MarkPage.jsx";
+import {ConclusaoPage} from "../../Pages/ConclusaoPage/ConclusaoPage.jsx";
 
 export const Content = () =>{
     return (
@@ -30,12 +31,13 @@ export const Content = () =>{
                     <Route path="/tutorialvim/Modos" element={<ModosPage/>}/>
                     <Route path="/tutorialvim/Comandos de movimento" element={<NavegacaoPage/>}/>
                     <Route path="/tutorialvim/Comandos de edição" element={<EdicaoPage/>}/>
-                    <Route path="/tutorialvim/Pesquisa" element={<SearchPage/>}/>
-                    <Route path="/tutorialvim/Expressões Regulares" element={<RegexPage/>}/>
+                    <Route path="/tutorialvim/Pesquisa e Substituição" element={<SearchPage/>}/>
+                    <Route path="/tutorialvim/Marcadores" element={<MarkPage/>}/>
                     <Route path="/tutorialvim/Dividir Telas" element={<WindowsPage/>}/>
                     <Route path="/tutorialvim/NERDTree" element={<NERDTreePage/>}/>
-                    <Route path="/tutorialvim/Recoding" element={<RecodingPage/>}/>
-                    <Route path="/tutorialvim/Lista Alfabética" element={<ListaAlfaPage/>}/>
+                    <Route path="/tutorialvim/Recording" element={<RecodingPage/>}/>
+                    <Route path="/tutorialvim/Conclusão" element={<ConclusaoPage/>}/>
+                    {/*<Route path="/tutorialvim/Lista Alfabética" element={<ListaAlfaPage/>}/>*/}
                 </Routes>
             </div>
         </>

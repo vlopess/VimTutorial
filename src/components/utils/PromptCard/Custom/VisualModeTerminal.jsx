@@ -23,7 +23,7 @@ export const VisualModeTerminal = ({modetext}) => {
 
     return (
       <>
-          <motion.div className="card small"
+          <motion.div className="card large"
             ref={ref}
             variants={boxVariant}
             initial="hidden"

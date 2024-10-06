@@ -23,13 +23,13 @@ export const SideBar = ({index, setIndex}) => {
                     <SideBarItem text={"Modos"} onClick={() => update(2)} isActive={index === 2}/>
                     <SideBarItem text={"Comandos de movimento"} onClick={() => update(3)} isActive={index === 3}/>
                     <SideBarItem text={"Comandos de edição"} onClick={() => update(4)} isActive={index === 4}/>
-                    <SideBarItem text={"Pesquisa"} onClick={() => update(5)} isActive={index === 5}/>
-                    <SideBarItem text={"Expressões Regulares"} onClick={() => update(6)} isActive={index === 6}/>
+                    <SideBarItem text={"Pesquisa e Substituição"} onClick={() => update(5)} isActive={index === 5}/>
+                    <SideBarItem text={"Marcadores"} onClick={() => update(6)} isActive={index === 6}/>
                     <SideBarItem text={"Dividir Telas"} onClick={() => update(7)} isActive={index === 7}/>
                     <SideBarItem text={"NERDTree"} onClick={() => update(8)} isActive={index === 8}/>
-                    <SideBarItem text={"Recoding"} onClick={() => update(9)} isActive={index === 9}/>
+                    <SideBarItem text={"Recording"} onClick={() => update(9)} isActive={index === 9}/>
                     <SideBarItem text={"Configuração do Vim"} onClick={() => update(10)} isActive={index === 10}/>
-                    <SideBarItem text={"Lista Alfabética"} onClick={() => update(11)} isActive={index === 11}/>
+                    {/*<SideBarItem text={"Lista Alfabética"} onClick={() => update(11)} isActive={index === 11}/>*/}
                 </div>
             </aside>
         </>

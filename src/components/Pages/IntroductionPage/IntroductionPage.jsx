@@ -77,8 +77,8 @@ export const IntroductionPage = () => {
                 </div>
                 <p>
                     No resultado é visível, na coluna esquerda da tela, há uns tils (~) que indicam
-                    que não há texto em o arquivo. Já na parte inferior, tem a chamada <i>linha de status</i>
-                    que tem o nome e o status do arquivo.
+                    que não há texto em o arquivo. Já na parte inferior, tem a chamada <i>linha de
+                    status</i> que tem o nome e o status do arquivo.
                 </p>
                 <p>Você pode usar o vim para editar qualquer arquivo de texto, para isso, basta passar o caminho do
                     arquivo completo, ou se estiver o seu diretório atual, é só passar o caminho relativo:</p>

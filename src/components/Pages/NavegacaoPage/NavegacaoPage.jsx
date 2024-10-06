@@ -209,10 +209,26 @@ export const NavegacaoPage = () => {
                         Move para a linha <i>numero</i> do arquivo. (Modo de comando)
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                        <Key text={"+"}/>
+                    </td>
+                    <td>
+                        Vai para o primeiro caractere da próxima linha
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <Key text={"-"}/>
+                    </td>
+                    <td>
+                        Vai para o primeiro caractere da última linha
+                    </td>
+                </tr>
             </table>
-            <h3>Movimentos Combinados</h3>
+            <h3>Argumentos Numéricos</h3>
             <p>
-                <b>Movimentos combinados</b> no Vim são quando você junta comandos de movimentação com números ou outros
+                <b>Argumentos Numéricos</b> no Vim são quando você junta comandos de movimentação com números ou outros
                 operadores para realizar movimentos mais precisos ou repetidos. No Vim, você pode combinar um número
                 com um comando de movimento para repetir a ação várias vezes. Na figura abaixo, a letra sublinhada
                 representa

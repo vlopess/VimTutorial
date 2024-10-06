@@ -4,6 +4,7 @@ import {Navigator} from "./components/utils/Navigator/Navigator.jsx";
 import {BrowserRouter} from "react-router-dom";
 import {Content} from "./components/utils/Content/Content.jsx";
 import {useEffect, useState} from "react";
+import ScrollToTop from "./components/utils/ScrollToTop/ScrollToTop.jsx";
 
 function App() {
   const [index, setIndex] = useState(() => {
@@ -18,6 +19,7 @@ function App() {
   return (
     <>
         <BrowserRouter>
+            <ScrollToTop/>
             <div className={"container2"}>
                 <SideBar index={index}  setIndex={setIndex}/>
                 <main className={"content"}>
